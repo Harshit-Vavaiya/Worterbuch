@@ -1,0 +1,5 @@
+INSERT INTO WORDS VALUES('Kartoffel','Potato');
+INSERT INTO WORDS VALUES('Fahrad','Cycle');
+INSERT INTO WORDS VALUES('Leute','People');
+INSERT INTO WORDS VALUES('Wagen','Car');
+INSERT INTO WORDS VALUES('Heute','Today');

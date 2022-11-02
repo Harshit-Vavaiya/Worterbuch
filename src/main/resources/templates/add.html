@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add a Word</title>
+    <link rel="stylesheet" th:href="@{/css/add.css}"/>
+</head>
+<body>
+<header>Worterbuch</header>
+<form th:object="${word}" th:action="@{/add}" th:method="POST">
+    <label>
+
+        <input th:field="*{word}" type="text" name="word" placeholder="word">
+    </label>
+    <label>
+
+        <input th:field="*{meaning}" type="text" name="meaning" placeholder="meaning">
+    </label>
+    <input type="submit" value="Add">
+</form>
+
+</body>
+</html>

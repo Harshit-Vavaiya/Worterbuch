@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Monospace", monospace;
+    background-color: #0d0d0d;
+    color: white;
+}
+
+
+
+header{
+    padding: 8px 0;
+    height: 10vh;
+    width:100%;
+    text-align: center;
+}
+
+#main{
+    width:80%;
+    margin: auto;
+    color: #1b1b1b;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+
+}
+
+.word{
+    color: #1b1b1b;
+    font-size: 2rem;
+}
+
+.meaning{
+    color: #1b1b1b;
+    padding: 18px 0;
+    font-size:1.4rem;
+    font-style: italic;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+ .word:hover, .word:hover + .meaning {
+
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.meaning:hover, .meaning:hover ~ .word{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+}
