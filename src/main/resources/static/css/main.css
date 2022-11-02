@@ -5,19 +5,21 @@
     font-family: "Monospace", monospace;
     background-color: #0d0d0d;
     color: white;
+    overflow-x: hidden;
 }
+
 
 
 
 header{
     padding: 8px 0;
     height: 10vh;
-    width:100%;
+    width:100vw;
     text-align: center;
 }
 
 #main{
-    width:80%;
+    width:60%;
     margin: auto;
     color: #1b1b1b;
     display: grid;
@@ -27,28 +29,43 @@ header{
 }
 
 .word{
-    color: #1b1b1b;
+    color: #2d2d2d;
     font-size: 2rem;
 }
 
 .meaning{
-    color: #1b1b1b;
+    color: #2d2d2d;
     padding: 18px 0;
     font-size:1.4rem;
     font-style: italic;
-    transition: 300ms;
-    cursor: pointer;
+
+}
+.word_container{
+    border-bottom: 1px dotted #282828;
 }
 
- .word:hover, .word:hover + .meaning {
+ .word_container:hover{
 
     color: white;
     cursor: pointer;
     text-decoration: underline;
 }
 
-.meaning:hover, .meaning:hover ~ .word{
-    color: white;
-    cursor: pointer;
-    text-decoration: underline;
+ .word_container:hover .word, .word_container:hover .meaning{
+     color:white
+ }
+
+@media only screen and (max-width: 768px) {
+    #main{
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .word{
+        font-size: 1.5rem;
+
+    }
+    .meaning{
+        font-size: 1rem;
+    }
 }

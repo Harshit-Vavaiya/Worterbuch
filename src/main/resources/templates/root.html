@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <title>Worterbuch</title>
     <link rel="stylesheet" th:href="@{/css/main.css}"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
 </head>
 <body>
 <header>Worterbuch</header>
 
 <div id="main">
-    <div th:each="wort : ${worts}">
-    <div th:text="${wort.word}" class="word"></div>
-    <div th:text="${wort.meaning}" class="meaning"></div>
+    <div th:each="wort : ${worts}" class="word_container">
+        <div th:text="${wort.word}" class="word"></div>
+        <div th:text="${wort.meaning}" class="meaning"></div>
     </div>
 </div>
 </body>

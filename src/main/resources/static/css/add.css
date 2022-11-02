@@ -19,7 +19,7 @@ body{
 header{
     padding: 8px 0;
     height: 10vh;
-    width:100%;
+    width:100vw;
     text-align: center;
 }
 form{
